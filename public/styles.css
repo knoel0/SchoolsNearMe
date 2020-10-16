@@ -1,0 +1,75 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+}
+
+#header {
+    grid-area: 1 / 1 / 2 / 13;
+    text-align: center;
+}
+
+#search_bar {
+    grid-area: 2 / 1 / 3 / 13;
+    display: flex;
+    flex-direction: row;
+}
+
+#search_input {
+    width: 95%;
+    font-family: 'Crimson Text', serif;
+}
+
+#search_submit {
+    width: 5%;
+}
+
+#filter_bar {
+    grid-area: 3 / 1 / 4 / 13;
+    display: flex;
+    padding: 10px;
+}
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    align-items: center;
+}
+
+#map_and_info {
+    grid-area: 4 / 1 / 13 / 13;
+    display: flex;
+    flex-direction: row;
+}
+
+#map_container {
+    width: 70%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#locations_info_container {
+    width: 30%;
+    padding: 0px 0px 0px 0px;
+}
+
+#locations_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: darkgrey;
+}

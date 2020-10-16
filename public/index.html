@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+        <title>Near Me</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Near Me</h1>
+        </div>
+        <div id="search_bar">
+            <input id="search_input" type="text" placeholder="Search by Postal Code, Address or City">
+            <button id="search_submit" type="submit"><i class="fa fa-search"></i></button>
+        </div>    
+        <div id="filter_bar">
+            <div id="filters"></div>
+        </div>
+        <div id="map_and_info">
+            <div id="map_container">
+                <div id="map"></div>
+            </div>
+            <div id=locations_info_container>
+                <div id="locations_info"></div>
+            </div>
+        </div>
+        <script src="near-me.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs6i5NXTnJMmD23hMV0QZta4HKRml2uKI&l&libraries=geometry,places&callback=initMap"></script>
+    </body>
+</html>
